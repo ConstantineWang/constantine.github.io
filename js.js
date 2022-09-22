@@ -1,4 +1,5 @@
 var tags = document.getElementsByClassName("row")
+AOS.init();
 console.log(tags)
 
 for (let i = 0; i < tags.length; i++) {
@@ -18,4 +19,23 @@ for (let i = 0; i < tags.length; i++) {
     })
 
 }
+
+
+var close = true;
+function collapse(){
+
+    if(close){
+        setTimeout(()=>{
+            document.getElementById("navbarNavAltMarkup").className="collapse";
+        },400)
+       
+    }
+}
+
+document.getElementById("responsiveClose").addEventListener("click",()=>{
+    close = !close;
+    collapse();
+})
+
+
 

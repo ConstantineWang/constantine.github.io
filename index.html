@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo One" rel="stylesheet">
+    <link rel="stylesheet" href="./hue.css">
     <link rel="stylesheet" href="./style.css">
-    <style>
 
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <style>
+    
   </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
   </head>
-<body data-spy="scroll" class="data-target" data-offset="51">
+<body data-spy="scroll" class="data-target cosmos" data-offset="51">
     <div id = "wrapper" >
        <!--导航栏-->
           <nav class="navbar sticky-top  navbar-expand-lg  bg-black" >     
@@ -23,14 +28,14 @@
                 <a class="navbar-brand" href="#">
                    <img src="img/logo.png" class="shake" height="100px" width="100px" alt="...">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" id="responsiveClose" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false">
                    <img src="img/downarrow.png" class="img-fluid" height="70px" width="70px" alt="...">
                 </button>
               
                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
                     <div class="navbar-nav" >
-                      <p class="shake"><span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size:20px;cursor: pointer;;">Constantine's Site</span></p>
+                      <p class="shake"><span style="font-size:20px; font-family: 'Russo one' !important;">Constantine's Site</span></p>
                           
 
                       <ul class="nav nav-pills">
@@ -55,13 +60,13 @@
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="2000">
-                <div style="height:60px;text-align: center;padding-top: 15px;font-size:35px;font-family:Copperplate;font-stretch:expanded;">I  am  Constantine.</div>
+                <div style="height:60px;text-align: center;padding-top: 15px;font-size:35px;font-family:Copperplate;font-stretch:expanded;color:white;">I  am  Constantine.</div>
               </div>
               <div class="carousel-item" data-bs-interval="2000"> 
-                <div style="height:60px;text-align: center;padding-top: 15px;font-size:35px;font-family:Copperplate;font-stretch:expanded;">This is only a temporary site.</div>
+                <div style="height:60px;text-align: center;padding-top: 15px;font-size:35px;font-family:Copperplate;font-stretch:expanded;color:white;">This is only a temporary site.</div>
               </div>
               <div class="carousel-item" data-bs-interval="5000">
-                <div style="height:60px;text-align: center;padding-top: 15px;  font-size:35px;font-family:Copperplate;font-stretch:expanded;">Contact:  constantinewang@ucla.edu</div>
+                <div style="height:60px;text-align: center;padding-top: 15px;  font-size:35px;font-family:Copperplate;font-stretch:expanded; color:white;">Contact:  constantinewang@ucla.edu</div>
               </div>
             </div>
           </div>
@@ -73,14 +78,14 @@
             <div style="display:flex;justify-content: center;" >
               <div class="mycard">
                 <div class="imgbox">
-                  <img src="img/WechatIMG99.jpeg" >
+                  <img src="img/WechatIMG193.png" >
                 </div>
                   <div class="card-body d-none d-md-block d-lg-block" style="padding:18px;overflow: hidden;">
                     <h1 style="font-family:sans-serif">I am Constantine.</h5>
-                    <p>My name is Constantine Wang and I am a first-year at UCLA. I will go to Boston this summer. Also, I will go to Cancun for travel. I love web development, especially the front-end stuff, and I have long been using React to develop front-end static sites. For the back-end, I love using Node.js with Express. 
+                    <p>My name is Constantine Wang and I am a incoming second-year at UCLA. I love web development and I am looking forward to meeting with you!
                       
                     </p>
-                    <p ><small class="text-muted">Last updated 06/04/2022</small></p>
+                    <p ><small class="text-muted">Last updated 09/22/2022</small></p>
                   </div>  
                 </div>
             </div>
@@ -96,7 +101,8 @@
              
           <!--教育-->
             <h3 id="scrollspyHeading2">Education</h3>
-            <div class="row">
+            <div class="row" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
               <div class="col-sm-10">University of California, Los Angeles  <span class="rightMost">2021.9-Present </span></div>
               
               <li>Math of Computation &nbsp;&nbsp; (CS in the future)</li>
@@ -107,58 +113,42 @@
             
           
           <h3 id="scrollspyHeading3">Experience</h3>
-          <div class="row">
-            <div class="col-sm-10">Harvard Medical School: Web Developer - Spring Intern, Front-End Developer  <span class="rightMost">2022.2-Present</span></div>
+          <div class="row" data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+            <div class="col-sm-10">Google Software Product Sprint  <span class="rightMost">2022.5-2022.8</span></div>
             
-            <li>Use React Native to develop interactive features and visual identity for a mobile app; </li>
-            <li>Use React to develop interactive features and visual identity for websites.</li>
-            <li>Make science understandable for the general public by creating original content (articles, podcasts, and videos) meant for a non-technical audience to read science.</li>  
-          </div>
+            <li>∙ Github: https://github.com/dmmmdg/sps-team-project</li>
+            <li>∙ Worked on the project as the back-end developer, using Java Servlet and Google's Datastore, and various Google Cloud Platform APIs</li>
+            <li>∙ Built a user system using Google Sign-In for Websites, focusing on maintaining site security by preventing injection and XXS attacks</li>
+            <li>∙ Practiced industry best practices such as: contributing to open source software using Git and Github, conducting code reviews, participating in distributed development, designing new components and interfaces and leading them to completion</li>
+            </div>
     
           
 
 
-          <div class="row">
-            <div class="col-sm-10">Link Spider Lab: Front-End Developer, 3D Modeler, Video Maker, Designer             <span class="rightMost">2020.5-2020.11</span></div>
+          <div class="row"data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+            <div class="col-sm-10">UCLA DevX, Developer Intern - remote         <span class="rightMost">2022.6-Present</span></div>
     
-            <li>  Set up official websites using HTML, CSS, and JavaScript for the research team and the lab; did graphic designing, video making, 3D printing, and programing. </li>
-            <li>Drew mathematical model in MATLAB to illustrate the LacZ concentration change as the different concentration of Histamine is added.</li>
-            <li>  Award as the Gold Prize in International Genetically Engineered Machine Competition (IGEM)</li>
+            <li>∙ Developed a full-stack web app as the official site of DevX using React and firebase cloud firestore</li>
+            <li>∙ Used Figma to design the mobile version of the official website</li>
+            <li>∙ Improve the front-end visual effect</li>
                 
   
           </div>
                     
 
-          <div class="row">
-            <div class="col-sm-10">Link Spider Lab: Front-End Developer, 3D Modeler, Video Maker, Designer                <span class="rightMost">2020.5-2020.11</span>  </div>
+          <div class="row"data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+            <div class="col-sm-10">Harvard Innovation Labs, web developer - remote            <span class="rightMost">2022.2-2022.4</span>  </div>
 
-            <li>  Set up official websites using HTML, CSS, and JavaScript for the research team and the lab; did graphic designing, video making, 3D printing, and programing. </li>
-            <li>Drew mathematical model in MATLAB to illustrate the LacZ concentration change as the different concentration of Histamine is added.</li>
-            <li>  Award as the Gold Prize in International Genetically Engineered Machine Competition (IGEM)</li>
-                
+            <li>Used React Native to develop interactive features and visual identity for a mobile app</li>
+            <li>Collaborated with a team of peers to design the logo and front-end page</li>                
           </div>
-                    
+                           
 
-          
-          
-          <div class="row">
-            <div class="col-sm-10">  Data Visualization Research: The Special Cases of N-body Problems, Team leader / First author    <span class="rightMost">2020.3-2021.2</span></div>
-            <li>  Programmed in Python to simulate the N-body systems when stars move in a repetitive cycle along the same curve on a single plane and in strong force potentials. </li>
-            <li>Calculated and recorded changes of physical parameters to draw the orbit line and mathematical models using matplotlib.</li>
-            <li>  Published the research paper in Frontiers of Society, Science and Technology (ISSN:2616-7433).</li>  
-          </div>
-                    
-     
-          <div class="row">
-            <div class="col-sm-10">  Lab of Automation, Shandong Uni. of Science and Technology, Lab Assistant           <span class="rightMost"> 2019.8-2020.11 </span> </div>
-            
-            <li> Helped to weld printed circuit board about handheld transceivers, and smart remote-controlled cars, designed the human-computer interaction interface. </li>
-            <li>   Programmed and debugged STM32 (more powerful and complex Arduino’s alternative) and ESP8266 chips.</li>
-              
-          </div>
-                    
-
-          <div class="row">
+          <div class="row"data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom">
             <h4>Hidden Talents
             </h4>
             <li>  Computer Language: proficient in HTML5&CSS, JavaScript, React; know Node.js, C, C++, React Native</li>
@@ -192,7 +182,7 @@
 
       </div>
 </body>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 <script src="js.js"></script>
